@@ -1,72 +1,60 @@
-<!--Travis Massicotte-->
-<!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="web.css">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--style attributes used to make text fade in over the image-->
-        <style>
-        .container {
-          position: relative;
-          width: 50%;
-        }
-        
-      /*the style for an overlay that transitions over the meme on this page*/
-        .overlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 100%;
-          width: 100%;
-          /*starting opacity of the intended transition (zero equals transparent)*/
-          opacity: 0;
-          /*speed at which the transition occurs*/
-          transition: .5s ease;
-          /*color of the transition block*/
-          background-color: #008788;
-        }
-        /*tells the image when and how to change based on interactions "hovering" over it in this case*/
-        .container:hover .overlay {
-          /*Ending opacity of the transition (one equals completely opaque)*/
-            opacity: 1;
-        }
-        
-        .text {
-            /*sets the attributes of the text that fades in*/
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-        }
-        </style>
-    <!--The title of this page is "Index"-->
-    <title>Home</title>
-</head>
-<body>
-    <div id="grad">
+/*Travis Massicotte*/
 
-    <!--The level one header for this page-->
-    <h1>Welcome!</h1>
-    <!--A meme referencing a coder questioning code not working and then questioning when it does work.
-    If hovered over, it displays "Happy Coding!" and it is assigned to class "centered" so it will be centered by the css-->
-    <p> 
-        </br>
+/* Body styles */
+body {
+    background-color: black;
+    color: #204364;
+    }
+    /*Level one header styles*/
+h1{
+    /*makes level one headers italic*/
+    font-style: italic;
+    /*increases the weight of level one headers*/
+    font-weight: 300;
+    /*centers level one headers*/
+    text-align: center;
+    /*sets the color of all level one headers*/
+    color: #204364;
+    /*Underlines all level one headers*/
+    text-decoration:underline;
+    /*sets a border around level one headers*/
+    text-shadow:  0 0 0 rgb(16, 110, 154), -1px 0 0 rgb(16, 110, 154),  0 -1px 0 rgb(16, 110, 154),
+     1px 0 0 white, 0 1px 0 rgb(16, 110, 154);
+}
 
-        <div class ="container">
-            <img id="memeImage" src="code_meme.jpg" alt = "coding_meme" class = "center"/>
-            <div class="overlay">
-                <div class="text"> Happy Coding!
-                </div>
-            </div>
-        </div>
-    <!--This meme was found at https://sl.bing.net/iwTTUz7SmBw -->
-    </p>
-    </div>
-</body>
-</html>
+/*Paragraph styles*/
+p {
+    /*sets the font for all paragraphs*/
+    font-family: Arial, sans-serif;
+    /*sets how tall each line is*/
+    line-height: 1.6;
+    /*sets the margin between words to 20 pixels*/
+    margin: 20px;
+    /*sets the color of text in the paragraph*/
+    color: #204364;
+    /*sets a border around text in paragraphs*/
+    text-shadow:  0 0 0 rgb(16, 110, 154), -1px 0 0 rgb(16, 110, 154),  0 -1px 0 rgb(16, 110, 154),  1px 0 0 white, 0 1px 0 rgb(16, 110, 154);
+}
+/* Main content styles */
+main {
+    margin: 20px 0;
+}
+/*sets the background of the web page to a repeating and rotating gradient from black to grey*/
+#grad {
+    background-image: repeating-conic-gradient( #3671a8 15%, #9EB9E4 20%);
+  }
+/*center id styles*/
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  /*styles for the img id*/
+  img {
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(45 deg, rgb(60, 78, 194), rgb(43, 3, 241));
+        
+  }
+  
