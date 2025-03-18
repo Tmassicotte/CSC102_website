@@ -1,0 +1,72 @@
+<!--Travis Massicotte-->
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="web.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style attributes used to make text fade in over the image-->
+        <style>
+        .container {
+          position: relative;
+          width: 50%;
+        }
+        
+      /*the style for an overlay that transitions over the meme on this page*/
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          /*starting opacity of the intended transition (zero equals transparent)*/
+          opacity: 0;
+          /*speed at which the transition occurs*/
+          transition: .5s ease;
+          /*color of the transition block*/
+          background-color: #008788;
+        }
+        /*tells the image when and how to change based on interactions "hovering" over it in this case*/
+        .container:hover .overlay {
+          /*Ending opacity of the transition (one equals completely opaque)*/
+            opacity: 1;
+        }
+        
+        .text {
+            /*sets the attributes of the text that fades in*/
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+        }
+        </style>
+    <!--The title of this page is "Index"-->
+    <title>Home</title>
+</head>
+<body>
+    <div id="grad">
+
+    <!--The level one header for this page-->
+    <h1>Welcome!</h1>
+    <!--A meme referencing a coder questioning code not working and then questioning when it does work.
+    If hovered over, it displays "Happy Coding!" and it is assigned to class "centered" so it will be centered by the css-->
+    <p> 
+        </br>
+
+        <div class ="container">
+            <img id="memeImage" src="code_meme.jpg" alt = "coding_meme" class = "center"/>
+            <div class="overlay">
+                <div class="text"> Happy Coding!
+                </div>
+            </div>
+        </div>
+    <!--This meme was found at https://sl.bing.net/iwTTUz7SmBw -->
+    </p>
+    </div>
+</body>
+</html>

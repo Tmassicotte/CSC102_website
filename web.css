@@ -1,0 +1,60 @@
+/*Travis Massicotte*/
+
+/* Body styles */
+body {
+    background-color: black;
+    color: #204364;
+    }
+    /*Level one header styles*/
+h1{
+    /*makes level one headers italic*/
+    font-style: italic;
+    /*increases the weight of level one headers*/
+    font-weight: 300;
+    /*centers level one headers*/
+    text-align: center;
+    /*sets the color of all level one headers*/
+    color: #204364;
+    /*Underlines all level one headers*/
+    text-decoration:underline;
+    /*sets a border around level one headers*/
+    text-shadow:  0 0 0 rgb(16, 110, 154), -1px 0 0 rgb(16, 110, 154),  0 -1px 0 rgb(16, 110, 154),
+     1px 0 0 white, 0 1px 0 rgb(16, 110, 154);
+}
+
+/*Paragraph styles*/
+p {
+    /*sets the font for all paragraphs*/
+    font-family: Arial, sans-serif;
+    /*sets how tall each line is*/
+    line-height: 1.6;
+    /*sets the margin between words to 20 pixels*/
+    margin: 20px;
+    /*sets the color of text in the paragraph*/
+    color: #204364;
+    /*sets a border around text in paragraphs*/
+    text-shadow:  0 0 0 rgb(16, 110, 154), -1px 0 0 rgb(16, 110, 154),  0 -1px 0 rgb(16, 110, 154),  1px 0 0 white, 0 1px 0 rgb(16, 110, 154);
+}
+/* Main content styles */
+main {
+    margin: 20px 0;
+}
+/*sets the background of the web page to a repeating and rotating gradient from black to grey*/
+#grad {
+    background-image: repeating-conic-gradient( #3671a8 15%, #9EB9E4 20%);
+  }
+/*center id styles*/
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  /*styles for the img id*/
+  img {
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(45 deg, rgb(60, 78, 194), rgb(43, 3, 241));
+        
+  }
+  
